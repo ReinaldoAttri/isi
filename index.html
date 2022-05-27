@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️ Para a Isi ❤️</title>
+
+    <script src="assets/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/estilo.css">
+
+    <link rel="preload" as="image" href="imagens/fundo2.gif">
+    <link rel="preload" as="image" href="imagens/fundo3.gif">
+    <link rel="preload" as="image" href="imagens/fundo4.jpg">
+    <link rel="preload" as="image" href="imagens/fundo7.gif">
+    <link rel="preload" as="image" href="imagens/fundo9.gif">
+    <link rel="preload" as="audio" href="assets/musica.mp3">
+
+</head>
+<body class="fundo1">
+
+<div class="pop-up">
+    <h1 class="text-muted">Título teste</h1>
+    <div>Descriçao teste</div>
+    <section class="text-center">
+        <button class="btn-azul" onclick="mostraPopUp(false)">Fechar</button>
+    </section>
+</div>
+
+<div class="container d-flex justify-content-center">
+
+    <div id="tela1" class="tela tela-centro visivel">
+        <h1 class="text-muted">Bem-vinda</h1>
+        <p>Você está pronta?</p>
+        <button class="mudaTela btn-azul">Começar</button>
+
+        <!--
+        <div class="mt-5">
+
+            <a href="#" class="opcoes">Ver opções</a>
+            <div class="invisivel opcoes">
+                <p>Se quiser, você pode escolher começar de uma tela específica:</p>
+                <button class="btn-rosa mudaTela" tela="">Início</button>
+                <button class="btn-rosa">Mensagens</button>
+                <button class="btn-rosa">Momentos marcantes</button>
+                <button class="btn-rosa">O que você mudou em mim</button>
+                <button class="btn-rosa">Nossa primeira conversa</button>
+                <button class="btn-rosa">Memorial</button>
+                <button class="btn-rosa">Declaração</button>
+                <button class="btn-rosa">Final</button>
+            </div>
+
+        </div>
+        -->
+
+    </div>
+
+    <div id="tela2" class="tela" fundo="fundo1">
+        <p class="text-muted"><small>Antes de começar, confirme:</small>
+            <br>
+            <strong>Você conhece esta pessoa?</strong></p>
+        <img src="imagens/tela2.png" class="custom" width="150" alt="">
+        <br>
+
+        <button class="mudaTela btn-azul btn-block mt-5" animacao="null" tempoAnimacao="500">Sim</button>
+        <br>
+        <button class="btn-vermelho btn-block"
+                onclick="alert('Então você não deveria estar acessando este site. Vaza, mano!');window.location.href='https://www.dicio.com.br/trouxa/'; ">
+            Não
+        </button>
+
+    </div>
+
+    <div id="tela3" class="tela">
+        <p><strong>Tem certeza?</strong><br> Olhe bem pra isso:</p>
+        <img src="imagens/tela3.png" class="custom" width="150" alt="">
+
+        <br>
+        <button class="mudaTela btn-block btn-azul">Sim, infelizmente</button>
+        <br>
+        <button class="btn-block btn-vermelho"
+                onclick="alert('Tudo bem, eu entendo sua vergonha.');window.location.href='https://www.dicio.com.br/otario/'; ">
+            Não, Deus me livre
+        </button>
+    </div>
+
+    <div id="tela4" class="tela">
+        <h2>Espere...</h2>
+
+        <img src="imagens/tela4.jpg" class="custom mb-4" width="150" alt="">
+
+        <p>É a <strong>Isi</strong> que está acessando essa página agora?
+        </p>
+
+        <button class="mudaTela btn-azul">Sim, sou eu</button>
+        <button class="mudaTela btn-vermelho btn-block"
+                onclick="alert('Você deveria ter vergonha de estar aqui!\n\nBom, eu sei que mesmo eu te levando para outra página, você voltará aqui depois porque sua curiosidade o obriga a isso, então pode seguir para a próxima página.');">
+            Não, eu sou uma amiga ou conhecido da Isi que está acessando esse site, mesmo o Reinaldo tendo dito pra ela
+            não passar para ninguém, então ela não pode se conter e me enviou esse link. Esse botão é gigante.
+        </button>
+    </div>
+
+    <div id="tela5" class="tela">
+        <p>Para que tudo dê certo, você precisa estar ouvindo a música de fundo.</p>
+        <hr>
+        <p><small>Quando estiver ouvindo-a, clique no botão.</small></p>
+        <button class="mudaTela btn-azul">Continuar</button>
+    </div>
+
+    <div id="tela6" class="invisivel letra2 temporizado tela-centro" fundo="fundo2" style="color: #FFF;" tempo="3000">
+        <div tempo="3000">
+            <p>Bom, então vamos lá...</p>
+        </div>
+        <div tempo="3000">
+            <p>eu queria que você soubesse de algumas coisas.</p>
+        </div>
+        <div tempo="3000">
+            <p>Tu é uma geógrafa muito linda...</p>
+        </div>
+        <div tempo="3000" final="true">
+            <p>Eu tenho muito orgulho de tu</p>
+        </div>
+    </div>
+
+    <div id="tela7" class="invisivel temporizado letra2 tela-centro" fundo="fundo3" style="color: #FFF;" tempo="3000">
+        <div tempo="3000">
+            <p>As vezes é difícil imaginar...</p>
+        </div>
+        <div tempo="2500">
+            <p>que tu apareceu do nada...</p>
+        </div>
+        <div tempo="2500">
+            <p>me ganhou completamente...</p>
+        </div>
+        <div tempo="4000">
+            <p>e me fez ficar muito boiolinha por tu</p>
+        </div>
+        <div tempo="4000" final="true">
+            <p>e fico muito feliz que tu faça parte da minha vida.</p>
+        </div>
+    </div>
+
+    <div id="tela8" class="tela-centro tela" fundo="fundo4" tempo="6000">
+
+        <p>E eu quero te mostrar o quanto tu me faz bem.</p>
+
+        <button class="mudaTela btn-rosa">Continuar</button>
+
+    </div>
+
+    <div id="tela9" class="tela">
+
+        <div class="text-start">
+            <div class="text-center">
+                <h2 class="letra-vermelha">1. Cervejinha</h2>
+                <img src="imagens/tela8-1.png" alt="">
+                <p class="letra2" style="font-size: 0.8em;"><strong>É ótimo encontrar alguém que conversa sobre tantas
+                    coisas tomando uma cervejinha. </strong></p>
+            </div>
+            <hr>
+            <p><strong class="letra-vermelha">E quando digo ótimo</strong>, ainda é pouco para demonstrar o quanto eu
+                gosto, é muito gostoso viver esses momentos contigo.</p>
+
+        </div>
+
+        <button class="mudaTela btn-rosa mt-3">Continuar</button>
+
+    </div>
+
+    <div id="tela10" class="tela">
+
+        <div class="text-start">
+            <div class="text-center">
+                <h2 class="letra-vermelha">2. Momentos</h2>
+                <img src="imagens/tela9-1.png" alt="">
+                <p class="letra2" style="font-size: 0.8em;"><strong>Essa é minha foto favorita tua.</strong></p>
+            </div>
+            <hr>
+            <p><span class="letra2 letra-vermelha" style="font-size: 1em;">Eu me apaixonei por tu.</span><br>Lembra das
+                diversas vezes que eu ficava te olhando tu me perguntava <strong class="text-muted">"O que foi? Por
+                    que está me olhando desse jeito?"</strong> e eu respondia <strong class="text-muted">"Nada
+                    não"</strong>?</p>
+            <p>Cada uma dessas vezes foi quando me descobri apaixonado por te, e vou te contar algumas vezes:</p>
+            <ul>
+                <li><strong class="letra-vermelha">A primeira vez</strong> foi no catarina. Estavamos sentados tomando
+                    uma cervejinha (sempre kk), tu veio com um papo estranho de queria parar de ficar pipipopo... Mas eu
+                    queria muito
+                    continuar pq eu gostava muito do que rolava entre a gente. Fizemos um pacto de dedinho para não
+                    parar de
+                    ficar. Naquele momento, eu
+                    só fiquei pensando <strong
+                            class="text-muted">"Cara, ela é demais!"</strong>.
+                </li>
+                <li><strong class="letra-vermelha">Quando saímos outra vez no solar </strong>, lembro-me
+                    perfeitamente: eu
+                    estava tentando fazer tu dançar um forrozinho (eu acho), não deu muito certo, mas foi ótimo
+                    viver aquele momento contigo. Terminamos a noite bem brisadinhos e felizes voltando para casa. Eu
+                    não consigo explicar
+                    o que senti quando vi tu ali naquele momento comigo, era como se o tempo tivesse parado ali e as
+                    borboletinhas estivessem a voar eternamente pelo meu estomago. Nesse momento eu já sabia que estava
+                    boiolinha por tu.
+                </li>
+                <li><strong class="letra-vermelha">Outra vez</strong> foi quando saímos para acampar, foi nosso primeiro
+                    camping
+                    juntos e foi MARAVILHOSOOOO. Dormir agarradinho contigo, não só no camping, mas todas as vezes que
+                    já aconteceu esse evento raro (brinks) é sempre muito muito muito muito perfeito. Quando tu deita no
+                    meu peito, as vezes até dorme por cima de mim, eu me sinto como estivesse segurando um patinho de
+                    porcelana
+                    que eu tenho que cuidar com muito amor e carinho.
+                </li>
+                <li><strong class="letra-vermelha">Um das vezes que eu fiquei mais boiolinha</strong> foi quando
+                    estávamos
+                    em jucelino e tu ficou admirando as estrelas junto comigo. Tu não percebeu, mas eu fiquei te
+                    observando e pensando
+                    <strong class="text-muted"> "como que ela consegue ser incrível assim?"</strong>. Parecia que
+                    estávamos admirando uma obra de
+                    Van Gogh e depois tu veio me abraçar por trás. Foi o auge de um momento perfeito.
+                </li>
+            </ul>
+
+            <hr>
+
+
+        </div>
+
+        <button class="mudaTela btn-rosa mt-3">Continuar</button>
+
+    </div>
+
+    <div id="tela11" class="tela">
+
+        <div class="text-left">
+            <div class="text-center">
+                <h2 class="letra-vermelha">3. O teu jeito</h2>
+                <img src="imagens/tela10.png" alt="">
+                <p class="letra2" style="font-size: 0.8em;"><strong>Essa foto eu peguei na internet.</strong></p>
+            </div>
+            <hr>
+            <p class="letra-vermelha"><strong>O que isso tem a ver, tu se perguntaria?</strong></p>
+            <p>Antes de começarmos a estar juntos, eu sempre gostei muito de admirar o mar, o sol e as estrelas. Tu
+                vieste para
+                complementar tudo isso em mim. As vezes eu olho um pôr do sol maravilhoso e a primeira coisa que eu
+                penso é que
+                eu queria ver ele contigo, simplemente por admirar uma coisa linda com uma pessoa ao meu lado que me fez
+                bem.</p>
+            <hr>
+            <p>Para mim, astrologicamente falando, foi muita ironia do destino ele juntar dois virginianos com
+                ascendente em gêmeos
+                e fazer isso dar certo hahaha. Eu só tenho a agradecer.</p>
+            <p>O teu jeito de me apoiar em tudo, seja em coisas aleatórias ou coisas sérias, tem um grande significado
+                para mim.</p>
+            <p class="letra-vermelha"><strong>Te agradeço imensamente por tudo isso!</strong></p>
+            <hr>
+            <h3 class="letra-vermelha mt-5 mb-5">Tu me faz bem.</h3>
+
+        </div>
+
+        <button class="mudaTela btn-rosa">Continuar</button>
+
+    </div>
+
+    <div id="tela12" class="tela">
+        <h2 class="letra-vermelha">Essa foi nossa primeira conversa (em partes)</h2>
+
+        <img src="imagens/tela12.png" alt="">
+
+        <button class="mudaTela btn-rosa mt-3">Continuar</button>
+    </div>
+
+    <div id="tela13" class="tela">
+        <h2 class="letra-vermelha">A nossa pastinha</h2>
+        <p>Não sei se tu sabe, mas eu gosto de viver e colecionar momentos contigo. Eu criei essa pastinha para eu ver o quando
+            sou feliz ao teu lado e me lembrar todos os dias o quanto tu me faz feliz...<br> <strong
+                    class="letra-vermelha">...o álbum ainda ta com poucas figurinhas, mas espero que ele nunca seja um álbum completo. </strong>
+        </p>
+        <hr>
+        <img src="imagens/pastinha.png" alt="">
+
+
+        <table style="display: none !important;" class="calendario">
+            <span style="display: none !important;"><strong class="text-muted">Maio de 2021</strong></span>
+            <thead>
+            <tr>
+                <td>Dom</td>
+                <td>Seg</td>
+                <td>Ter</td>
+                <td>Qua</td>
+                <td>Qui</td>
+                <td>Sex</td>
+                <td>Sáb</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td class="marcado" value="5/5">5</td>
+                <td>6</td>
+                <td>7</td>
+                <td class="marcado" value="8/5">8</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td class="marcado" value="15/5">15</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td class="marcado" value="22/5">22</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td class="marcado" value="29/5">29</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>31</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <table style="display: none !important;" class="calendario">
+            <span style="display: none !important;"><strong class="text-muted">Junho de 2021</strong></span>
+            <thead>
+            <tr>
+                <td>Dom</td>
+                <td>Seg</td>
+                <td>Ter</td>
+                <td>Qua</td>
+                <td>Qui</td>
+                <td>Sex</td>
+                <td>Sáb</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td class="marcado" value="3/6">3</td>
+                <td>4</td>
+                <td class="marcado" value="5/6">5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td class="marcado" value="12/6">12</td>
+            </tr>
+            <tr>
+                <td class="marcado" value="13/6">13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td class="marcado" value="19/6">19</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <button class="mudaTela btn-rosa mt-5">Continuar</button>
+
+    </div>
+
+    <div id="tela14" class="invisivel temporizado letra2 tela-centro" fundo="fundo5" style="color: #FFF;" tempo="2000">
+        <div tempo="3000">
+            <p>E só de pensar...</p>
+        </div>
+        <div tempo="2500">
+            <p>onde tudo começou...</p>
+        </div>
+        <div tempo="3000">
+            <p>e passou tudo tão rápido...</p>
+        </div>
+        <div tempo="3000">
+            <p>em tudo que ainda podemos viver juntos...</p>
+        </div>
+        <div tempo="4000">
+            <p>Nem Humboldt nem Ritter conseguem descrever a mulher maravilhosa que tu é ❤</p>
+        </div>
+        <div tempo="4000">
+            <p>Quando eu to contigo parece o encontro da placa Nazca com a Sul-Americana ❤️</p>
+        </div>
+        <div tempo="4000" final="true">
+            <p>Eu fui pesquisar algumas coisas de Geografia para bolar isso, não sei se fez sentido, mas eu achei legal.</p>
+        </div>
+    </div>
+
+    <div id="tela15" class="invisivel temporizado letra2 tela-centro" fundo="fundo11" style="color: #999;" tempo="2500">
+        <div tempo="2000">
+            <p>Bom...</p>
+        </div>
+        <div tempo="3500">
+            <p>Já que chegou até aqui</p>
+        </div>
+        <div tempo="3500">
+            <p>Eu preciso te fazer a pergunta.</p>
+        </div>
+        <div tempo="4000" final="true">
+            <p>Como virginiano, eu posso afirmar que estou muito seguro em perguntar...</p>
+        </div>
+    </div>
+
+    <div id="tela16" class="tela tela-centro">
+        <h2 class="text-muted">Você está pronta?</h2>
+        <p>Quando estiver, é só apertar o botão.</p>
+
+        <button class="mudaTela btn-verde">Estou pronta</button>
+    </div>
+
+    <div id="tela17" class="invisivel temporizado letra2 tela-centro" fundo="" style="color: #999;" tempo="1500">
+        <div tempo="2000">
+            <p>Então...</p>
+        </div>
+        <div tempo="8000" final="true">
+            <p>agora, olhe nos meus olhos...</p>
+        </div>
+    </div>
+
+    <div id="tela18" class="tela tela-centro" fundo="">
+        <h2 class="text-muted mb-5 mt-2">Qual foi a resposta?</h2>
+        <button class="mudaTela btn-block btn-azul">SIM</button>
+        <br>
+        <button class="btn-block btn-vermelho" onclick="alert('Kkkk mentira, eu sei que foi SIM.');">NÃO</button>
+    </div>
+
+    <div id="tela21" class="tela">
+        <h2 class="mb-5" style="color: #CCC">Nesse caso, precisamos atualizar o memorial</h2>
+
+        <table class="calendario">
+            <span><strong class="text-muted">Junho de 2021</strong></span>
+            <thead>
+            <tr>
+                <td>Dom</td>
+                <td>Seg</td>
+                <td>Ter</td>
+                <td>Qua</td>
+                <td>Qui</td>
+                <td>Sex</td>
+                <td>Sáb</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td class="marcado" value="final">19</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div id="tela19" class="invisivel temporizado letra2 tela-centro" fundo="fundo6" style="color: #FFF;" tempo="1500">
+        <div tempo="7000" class="text-center">
+            <p class="mb-0">Obrigado por estar comigo.</p>
+            <div class="text-center">
+                <span style="font-size:0.4em; color: #555;">fim</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!--<script src="assets/js/bootstrap.min.js"></script>-->
+
+<script src="assets/script.js"></script>
+<!--<script src="assets/all.min.js"></script>-->
+
+</body>
+</html>
